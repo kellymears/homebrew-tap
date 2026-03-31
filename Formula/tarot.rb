@@ -9,11 +9,11 @@ class Tarot < Formula
 
   def install
     system "npm", "install", *std_npm_args
-    bin.install_symlink libexec/"bin/arcana"
+    bin.install_symlink libexec/"bin/arcana" => "tarot"
     bin.install_symlink libexec/"bin/arcana-mcp"
   end
 
   test do
-    assert_match version.to_s, shell_output("#{bin}/arcana --version")
+    assert_match version.to_s, shell_output("#{bin}/tarot --version")
   end
 end
