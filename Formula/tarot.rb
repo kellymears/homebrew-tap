@@ -9,8 +9,8 @@ class Tarot < Formula
 
   def install
     system "npm", "install", *std_npm_args
-    bin.install_symlink libexec/"bin/arcana" => "tarot"
     bin.install_symlink libexec/"bin/arcana-mcp"
+    ln_sf libexec/"bin/arcana", bin/"tarot"
   end
 
   test do
