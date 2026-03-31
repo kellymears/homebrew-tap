@@ -1,8 +1,8 @@
 class Tarot < Formula
   desc "Arcana — a tarot reading CLI"
   homepage "https://github.com/kellymears/arcana-cli"
-  url "https://registry.npmjs.org/arcana-cli/-/arcana-cli-0.1.0.tgz"
-  sha256 "ecd596771d0cb6bbb327acdab55bd7af921027ff066583d86a2ac1364afcbb3a"
+  url "https://registry.npmjs.org/arcana-cli/-/arcana-cli-0.2.0.tgz"
+  sha256 "db9772d3dae1989a282bd96b46d1eeec44a601d9ab63fcfc8a0109b34eee5389"
   license "MIT"
 
   depends_on "node"
